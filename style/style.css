@@ -102,7 +102,6 @@
   text-align: center;
 }
 .contener{
- 
    display: grid;
   grid-template-columns: repeat(4, 1fr); 
   column-gap: 20px;
@@ -163,12 +162,7 @@
   align-items: center;
   
 }
-.text-img img{
-  
-   
-   
-  
-}
+
 .section-2-text li{
   font-size: 22px;
   color: #8987A1;
@@ -186,6 +180,82 @@
 }
 .section-2-text ul li{
   row-gap: 20px;
+}
+/* setion-4 */
+.setion-4{
+   background-image: url("../assets/news-letter-bg.png");
+   background-size: cover;
+  background-position: center;
+  height: 533px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ .text-form{
+  background-color: #ffff;
+  padding: 15.5px  15.5px ;
+  border: none;
+  padding-right: 530px;
+  padding-left: 20px;
+  
+}
+.btun-2{
+  padding: 15.5px 53px;
+  color: white;
+  background-color: #E95A08;
+  border: none;
+  margin-left: -3px;
+} 
+.hading-4{
+  font-weight: bold;
+  font-size: 3.1rem;
+  color: white;
+  margin-bottom: 23px;
+} 
+/* footer setion */
+.fooet-contener{
+  width: 1140px;
+  margin: 50px auto;
+  display: grid;
+   grid-template-areas: "footer-head footer-link-1 footer-link-2 img"; 
+  justify-content: space-between;
+  
+}
+  .footer-head{
+  grid-area: footer-head;
+}
+.footer-link-1{
+  grid-area: footer-link-1;
+}
+.footer-link-2{
+  grid-area: footer-link-2;
+}
+.img-2{
+  grid-area: img;
+}  
+.footer-link-1 a{ 
+  text-decoration: none;
+  display: block;
+  margin-bottom: 32px;
+  color: #8987A1;
+}
+.footer-link-2 a{
+  text-decoration: none;
+  display: block;
+  margin-bottom: 32px;
+  color: #8987A1;
+}
+.footer-pading{
+  color: #8987A1;
+  font-size: 1.3rem;
+}
+.img-2 img{
+  width: 36px;
+  height: 36px;
+  margin-left: 24px;
 }
  @media screen and (max-width:576px){
   .maunu a {
@@ -241,5 +311,38 @@
   .section-2-text li{
     font-size: 14px;
   }
+  .text-form{
+    padding-right: 114px;
+  }
+  .btun-2{
+    padding: 15px 12px;
+  }
+  .setion-4{
+    height: 276px;
+  }
+  .hading-4{
+    font-size: 1.25rem;
+  }
+  .fooet-contener{
+    display: grid;
+     grid-template-areas:
+    "footer-head"
+    "footer-link-1"
+    "footer-link-2"
+    "img"
+    ;
+    grid-template-columns: 1fr; 
+    
+    
+    margin-left: 20px;
+    width: auto;
+  }
+  .footer-pading{
+    font-size: 1rem;
+  }
+  .footer-link-1{
+    margin-top: 24px;
+  }
+  
    
  }
