@@ -71,8 +71,9 @@
   grid-area: img;
 } 
 .img img{
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  
 }
 .banner-hed{
   font-weight: bold;
@@ -83,7 +84,7 @@
   font-size: 1.2rem;
   margin-top: 20px;
 }
-/* mine-1 */
+/* setion-1 */
 .mine-1{
   max-width: 1140px;
   margin: 120px auto 0;
@@ -140,11 +141,7 @@
   margin: 204px auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "text-img section-2-text";
-  
-  
-
-  
+  grid-template-areas: "text-img section-2-text";  
 }
 .text-img{
   grid-area: text-img;
@@ -181,7 +178,26 @@
 .section-2-text ul li{
   row-gap: 20px;
 }
+/* setion-3 */
+ .setion-3{
+  text-align: center;
+  margin-top: 143px;
+  margin-bottom: 51px;
+}
+.setion-3-hading{
+  font-weight: bold;
+  font-size: 3.1rem;
+}
+.cilir-3{
+  color: #E95A08;
+}
+.pading-3{
+  color: #8987A1;
+font-size: 1.25rem
+}
+
 /* setion-4 */
+
 .setion-4{
    background-image: url("../assets/news-letter-bg.png");
    background-size: cover;
@@ -257,8 +273,10 @@
   height: 36px;
   margin-left: 24px;
 }
- @media screen and (max-width:576px){
-  .maunu a {
+
+
+@media screen and (max-width: 576px) {
+    .maunu a {
     display: none;
   }
   .banner{
@@ -278,6 +296,7 @@
     font-size: 1rem;
     padding: 0 10px;
   }
+  /* setion-1 */
   .contener{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -287,7 +306,24 @@
     padding: 26px 50px;
     font-size: 16px; 
   }
-  
+  .text-mine-1{
+    font-size: 0.8rem;
+    padding: 16px 28px 0px 28px;
+  }
+  .hade-1{
+    font-size: 1.5rem;
+  }
+   .card-lily{
+    font-size: 1rem;
+  }
+  .card-usd{
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .btun{
+    font-size: 1rem;
+  }
+  /* setione-2 */
   .section-2{
     display: grid;
     grid-template-areas: 
@@ -296,14 +332,18 @@
     ;
     grid-template-columns: 1fr;
     margin-top: 41px;
-    align-items: center;
+    
   }
   .text-img img{
-    width: 96%;
+    width: 95%;
     margin-left: 20px;
   }
   .Flower-setion-2{
     font-size: 1.5rem;
+    
+  }
+  .section-2-text{
+    padding-left: 20px;
   }
   .clang{
     display: none;
@@ -311,18 +351,34 @@
   .section-2-text li{
     font-size: 14px;
   }
+ 
+  /* setion-3 */
+  .br-3{
+    display: none;
+  }
+  .pading-3{
+    font-size: 0.8rem;
+    padding: 16px 28px 0px 28px;
+  }
+  .setion-3-hading{
+    font-size: 1.5rem;
+  }
   .text-form{
     padding-right: 114px;
   }
   .btun-2{
     padding: 15px 12px;
   }
+  /* setion hard */
+  
+  /* siteon-4 */
   .setion-4{
     height: 276px;
   }
   .hading-4{
     font-size: 1.25rem;
   }
+  /* foooter-setion */
   .fooet-contener{
     display: grid;
      grid-template-areas:
@@ -344,5 +400,116 @@
     margin-top: 24px;
   }
   
+  
+
+}
+
+/* setion hard */
+ .mine-contener-hard{
+    width: 1140px;
+    margin: 120px auto;
+    display: grid;
+     grid-template-areas:
+     "img-hard-one img-hard-one img-hard-three";
+    grid-template-columns: 1fr 1fr; 
+    
+  }
+  .img-hard-one{
+    background-image: url("../assets/deal-ana.png");
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 199px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    grid-area: img-hard-one;
+  }
+ 
+  .img-hard-three{
    
- }
+  } 
+  .img-hard-two{
+    background-image: url("../assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 199px;
+    border-radius: 10px;
+    grid-area: img-hard-two;
+  }
+  .img-hard-three{
+    background-image: url("../assets/deal-zabo.png");
+    width: 753px;
+    height: 423px;
+    margin-left: 28px;
+    border-radius: 10px;
+    grid-area: img-hard-three;
+  } 
+  .card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hard-in{
+    text-align: center;
+  }
+  .hard-pading{
+    color: white;
+    text-decoration: underline;
+  }
+  .hard-hading{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .hard-hading-1{
+    font-weight:bold ;
+    font-size: 2.5rem;
+    color: white;
+  }
+  .hard-pading-1{
+    color: white;
+    text-decoration: underline;
+    font-size: 1.75rem;
+  }
+    
+  @media screen and (max-width: 576px) {
+     .mine-contener-hard{
+    display:grid;
+     grid-template-areas:
+    "img-hard-one" 
+    "img-hard-one"
+    "img-hard-three"
+
+    ;
+     grid-template-columns: 1fr;
+      
+     width: 100%; 
+    
+   }
+   .hard-conttener{
+    flex-direction: column;
+   }
+   .img-hard-one, 
+    .img-hard-one,
+    .img-hard-three {
+      width: 100%;
+      height: 172px;
+      margin: 25px auto;
+      
+    }
+    .img-hard-three{
+      margin-top: 25px;
+      width: 367px;
+      height: 199px;
+      margin: 25px auto;
+    }
+    .hard-conttener{
+      margin: 0 auto;
+    }
+    .hard-hading-1{
+      font-size:1.25rem ;
+    }
+    .hard-pading-1{
+      font-size: 1rem;
+    }
+    
+  }
